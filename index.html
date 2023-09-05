@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card,.sidebar,.search,header{
+            background-color: #353535;
+        }
+        .card{
+            height: 150px;
+            margin: 50px;
+        }
+        .search{
+            margin: 20px;
+        }
+        .card,.sidebar{
+            border-radius: 20px;
+        }
+        .sidebar{
+            height: calc(100vh - 280px);
+        }
+        .search{
+            border-radius: 10px;
+        }
+        body{
+            background-color: #cad2c5;
+        }
+        header{
+            display: flex;
+            padding: 10px 50px;
+            gap: 40px;
+        }
+        .search_input {
+            padding: 10px;
+            background-color: #353535;
+            color: #cad2c5;
+            font-size: medium;
+            border: 0 !important;
+            border-radius: 10px;
+        }
+        .search_input::placeholder{
+            letter-spacing: 2px !important;
+            color: #9c9c9c !important;
+            font-size: 18px !important;
+            font-weight: 500;
+        }
+        .col-card{
+            /* max-width: 300px !important; */
+            min-width: 150px !important;
+        }
+        @media screen and (max-width:991px) {
+            .card{
+            margin: 25px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img style="width: 50px;" src="./git.jpg" alt="">
+        </div>
+        <div style="text-align: center;width: 100%; color: #cad2c5;font-size: medium;">
+            <h1>GITHUB</h1>
+        </div>
+    </header>
+    <div class="contain" style="padding: 50px;">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <div class="card sidebar"></div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-9">     
+                <div class="row" style="justify-content: center;">
+                    <div class="col-12">
+                        <div class="search" style="width: 80%;margin: auto;">
+                        <input type="search" disabled class="search_input" placeholder="Search" name="" id="">
+                    </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col col-card">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col col-card">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col col-card">
+                        <div class="card"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
